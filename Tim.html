@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a class="logo" href="index.html">IFMS SORT</a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="Bubble.html">BUBBLE</a></li>
+          <li><a href="Comb.html">COMB</a></li>
+          <li><a href="Count.html">COUNT</a></li>
+          <li><a href="Insertion.html">INSERTION</a></li>
+          <li><a href="Merge.html">MERGE</a></li>
+          <li><a href="Quick.html">QUICK</a></li>
+          <li><a href="Radix.html">RADIX</a></li>
+          <li><a href="Selection.html">SELECTION</a></li>
+          <li><a href="Shell.html">SHELL</a></li>
+          <li><a href="Tim.html">TIM</a></li>
+          <li><a href="Geral.html">GERAL</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="texto">
+      <h1>TimSort</h1>
+      <p>
+        TimSort é um algoritmo de classificação baseado em Insertion Sort e
+        Merge Sort. Primeiro, classifique as partes pequenas usando o
+        Insertion Sort e, em seguida, mescle as partes usando uma mesclagem de
+        classificação por mesclagem. Dividimos o Array em blocos conhecidos como
+        Run . Classificamos essas execuções usando a classificação por inserção
+        uma a uma e, em seguida, mesclamos essas execuções usando a função de
+        combinação usada na classificação por mesclagem. Se o tamanho do Array
+        for menor que run, o Array será classificado apenas usando o Insertion
+        Sort. O tamanho da execução pode variar de 32 a 64, dependendo do
+        tamanho da matriz. Observe que a função de mesclagem funciona bem quando
+        os subarrays de tamanho são potências de 2. A ideia é baseada no fato de
+        que a classificação por inserção funciona bem para arrays pequenos.
+      </p>
+
+      <h4><strong>Complexidade</strong></h4>
+      <p>Melhor caso: <strong>O(n)</strong></p>
+      <p>Caso médio: <strong>O(n*log(n))</strong></p>
+      <p>Pior caso: <strong>O(n*log(n))</strong></p>
+
+      <div>
+        <p>Grafico dos dados coletados</p>
+        <img src="imagens\tim\grafico.png" />
+      </div>
+      <br />
+      <div>
+        <p>Tabela dos dados coletados</p>
+        <img src="imagens\tim\tabela.png" />
+      </div>
+      <br />
+
+      <div>
+        <p>Código usado:</p>
+        <img src="imagens\tim\code1.png" />
+        <br>
+        <img src="imagens\tim\code2.png" />
+        <br>
+        <img src="imagens\tim\code3.png" />
+        <br>
+        <img src="imagens\tim\code4.png" />
+      </div>
+    </div>
+
+    <footer>
+      <div id="texto">
+        <p id="t1">&copy; Enison e Antonio</p>
+      </div>
+    </footer>
+
+    <script src="mobile-navbar.js"></script>
+  </body>
+</html>
