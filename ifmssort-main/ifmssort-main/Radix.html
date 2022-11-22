@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RADIX</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a class="logo" href="index.html">IFMS SORT</a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="Bubble.html">BUBBLE</a></li>
+          <li><a href="Comb.html">COMB</a></li>
+          <li><a href="Count.html">COUNT</a></li>
+          <li><a href="Insertion.html">INSERTION</a></li>
+          <li><a href="Merge.html">MERGE</a></li>
+          <li><a href="Quick.html">QUICK</a></li>
+          <li><a href="Radix.html">RADIX</a></li>
+          <li><a href="Selection.html">SELECTION</a></li>
+          <li><a href="Shell.html">SHELL</a></li>
+          <li><a href="Tim.html">TIM</a></li>
+          <li><a href="Geral.html">GERAL</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="texto">
+      <h1>RadixSort</h1>
+      <p>
+        O limite inferior para o algoritmo de classificação baseado em
+        comparação (Merge Sort, Heap Sort, Quick-Sort .. etc) é Ω(nLogn), ou
+        seja, eles não podem fazer melhor que nLogn . A classificação por
+        contagem é um algoritmo de classificação de tempo linear que classifica
+        em tempo O(n+k) quando os elementos estão no intervalo de 1 a k. E se os
+        elementos estiverem no intervalo de 1 a n 2 ? Não podemos usar a
+        classificação por contagem porque a classificação por contagem levará
+        O(n 2 ), o que é pior do que os algoritmos de classificação baseados em
+        comparação. Podemos classificar tal matriz em tempo linear? Radix Sort é
+        a resposta. A ideia do Radix Sort é classificar dígito por dígito,
+        começando do dígito menos significativo para o dígito mais
+        significativo. Radix sort usa classificação por contagem como uma
+        sub-rotina para classificar.
+      </p>
+
+      <h4><strong>Complexidade</strong></h4>
+      <p>Sejam d dígitos nos inteiros de entrada. Radix Sort leva tempo O(d*(n+b)) onde b é a base para representar números, por exemplo, para o sistema decimal, b é 10. Qual é o valor de d? Se k é o valor máximo possível, então d seria O(log b (k)). Portanto, a complexidade de tempo geral é <strong>O((n+b) * log b (k))</strong></p>
+
+      <div>
+        <p>Grafico dos dados coletados</p>
+        <img src="imagens\radix\grafico.png" />
+      </div>
+      <br />
+      <div>
+        <p>Tabela dos dados coletados</p>
+        <img src="imagens\radix\tabela.png" />
+      </div>
+      <br />
+
+      <div>
+        <p>Código usado:</p>
+        <img src="imagens\radix\code1.png" />
+        <br>
+        <img src="imagens\radix\code2.png" />
+      </div>
+    </div>
+
+    <footer>
+      <div id="texto">
+        <p id="t1">&copy; Enison e Antonio</p>
+      </div>
+    </footer>
+
+    <script src="mobile-navbar.js"></script>
+  </body>
+</html>

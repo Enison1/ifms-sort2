@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COMB</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a class="logo" href="index.html">IFMS SORT</a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="Bubble.html">BUBBLE</a></li>
+          <li><a href="Comb.html">COMB</a></li>
+          <li><a href="Count.html">COUNT</a></li>
+          <li><a href="Insertion.html">INSERTION</a></li>
+          <li><a href="Merge.html">MERGE</a></li>
+          <li><a href="Quick.html">QUICK</a></li>
+          <li><a href="Radix.html">RADIX</a></li>
+          <li><a href="Selection.html">SELECTION</a></li>
+          <li><a href="Shell.html">SHELL</a></li>
+          <li><a href="Tim.html">TIM</a></li>
+          <li><a href="Geral.html">GERAL</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="texto">
+      <h1>CombSort</h1>
+      <p>
+        O Comb Sort é principalmente uma melhoria em relação ao Bubble Sort. A
+        classificação por bolhas sempre compara valores adjacentes. Portanto,
+        todas as inversões são removidas uma a uma. O Comb Sort melhora o Bubble
+        Sort usando uma lacuna de tamanho maior que 1. A lacuna começa com um
+        valor grande e diminui por um fator de 1,3 em cada iteração até atingir
+        o valor 1. Assim, o Comb Sort remove mais de uma inversão conta com uma
+        troca e tem melhor desempenho do que o Bubble Sort. O fator de redução
+        foi empiricamente considerado 1,3 (ao testar o Combsort em mais de
+        200.000 listas aleatórias). Embora funcione melhor do que
+        o Bubble Sort em média, o pior caso permanece O(n<sup>2</sup>).
+      </p>
+
+      <h4><strong>Complexidade</strong></h4>
+      <p>Complexidade: <strong>O(n<sup>2</sup>)</strong></p>
+
+      <div>
+        <p>Grafico dos dados coletados</p>
+        <img src="imagens\comb\grafico.png" />
+      </div>
+      <br />
+      <div>
+        <p>Tabela dos dados coletados</p>
+        <img src="imagens\comb\tabela.png" />
+      </div>
+      <br />
+
+      <div>
+        <p>Código usado:</p>
+        <img src="imagens\comb\code.png" />
+      </div>
+    </div>
+
+    <footer>
+      <div id="texto">
+        <p id="t1">&copy; Enison e Antonio</p>
+      </div>
+    </footer>
+
+    <script src="mobile-navbar.js"></script>
+  </body>
+</html>
